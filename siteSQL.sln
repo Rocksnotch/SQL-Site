@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "siteSQL", "siteSQL.csproj", "{408E46D9-705B-40D0-8EA5-6CFFF259F1A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{408E46D9-705B-40D0-8EA5-6CFFF259F1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408E46D9-705B-40D0-8EA5-6CFFF259F1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408E46D9-705B-40D0-8EA5-6CFFF259F1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408E46D9-705B-40D0-8EA5-6CFFF259F1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACEEF501-94A1-47B4-A7D8-31A9E242CBB6}
+	EndGlobalSection
+EndGlobal

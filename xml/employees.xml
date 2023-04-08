@@ -1,0 +1,73 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<Departments>
+	<Department attribute="admin">
+		<Employee name="Johnson Cavet">
+			<Position>CEO</Position>
+			<Picture>images/employees/administration/ceo.jpg</Picture>
+		</Employee>
+		<Employee name="Wilhelm Cathidy">
+			<Position>COO</Position>
+			<Picture>images/employees/administration/coo.jpg</Picture>
+		</Employee>
+		<Employee name="Karen Wilde">
+			<Position>CFO</Position>
+			<Picture>images/employees/administration/cfo.jpg</Picture>
+		</Employee>
+	</Department>
+	<Department attribute="market">
+		<Employee name="Jonathan Casey">
+			<Position>Head of Marketing</Position>
+			<Picture>images/employees/marketing/head.webp</Picture>
+		</Employee>
+		<Employee name="Jessie Robertson">
+			<Position>Sales Associate</Position>
+			<Picture>images/employees/marketing/salesassoc1.webp</Picture>
+		</Employee>
+		<Employee name="Krill Jacobson">
+			<Position>Sales Associate</Position>
+			<Picture>images/employees/marketing/salesassoc2.jpg</Picture>
+		</Employee>
+	</Department>
+	<Department attribute="develop">
+		<Employee name="Shella DeVie">
+			<Position>Lead Designer</Position>
+			<Picture>images/employees/productdev/leaddesigner.jpg</Picture>
+		</Employee>
+		<Employee name="Jeremy Fitzgerald">
+			<Position>Product Overwatch</Position>
+			<Picture>images/employees/productdev/productoverwatch.jpg</Picture>
+		</Employee>
+		<Employee name="Vanessa Laurel">
+			<Position>Final Pass Technician</Position>
+			<Picture>images/employees/productdev/finalpasstech.jpg</Picture>
+		</Employee>
+	</Department>
+	<Department attribute="testing">
+		<Employee name="Johnny Patterson">
+			<Position>Head Tester</Position>
+			<Picture>images/employees/producttest/headtester.webp</Picture>
+		</Employee>
+		<Employee name="John Quaser">
+			<Position>Testing Associate</Position>
+			<Picture>images/employees/producttest/testingassoc1.jpg</Picture>
+		</Employee>
+		<Employee name="Jon Realson">
+			<Position>Testing Associate</Position>
+				<Picture>images/employees/producttest/testingassoc2.webp</Picture>
+		</Employee>
+	</Department>
+	<Department attribute="research">
+		<Employee name="Dr. Kyle Reasit">
+			<Position>Chief Researcher</Position>
+			<Picture>images/employees/rnd/chiefresearcher.webp</Picture>
+		</Employee>
+		<Employee name="Dr. Robert Kalienson">
+			<Position>Materials Researcher</Position>
+			<Picture>images/employees/rnd/materialsresearcher.jpg</Picture>
+		</Employee>
+		<Employee name="Jonsey">
+			<Position>Lab Rat</Position>
+			<Picture>images/employees/rnd/labrat.jpg</Picture>
+		</Employee>
+	</Department>
+</Departments>

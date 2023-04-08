@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.navbar {
+    background-color: #06404b;
+}
+
+body {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "footer";
+    grid-template-rows: 1fr 80px;
+    background-color: lightslategray;
+}
+
+main {
+    background-color: lightslategray;
+    grid-area: main;
+    padding-bottom: 25px;
+    color:white;
+}
+
+footer {
+    background-color: #06404b;
+}
+
+.row {
+    align-items: center;
+}
+
+.headImg {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.headerTop{
+    background-image: url(images/banner.webp);
+}
+
+.nav-link {
+    color: white;
+}
+
+.mainContent {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+.departmentList {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#button {
+    width: 175px;
+}
+
+#button:focus, #button:hover {
+    background-color: #e59827;
+    color: white;
+}
+
+.contentEmp {
+    display: none;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 325px;
+    padding-right: 325px;
+}
+
+.employeePic {
+    width: 240px;
+    height: 300px;
+}
+
+#selectDepart {
+    text-align: center;
+}
+
+.inline {
+    display: inline;
+    width: auto;
+
+}
+
+#err {
+    color: red;
+}
+
+.dropdownDiv {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.tableOneDiv {
+    float: right;
+    padding-right: 50px;
+    padding-top: 15px;
+}
+
+.tableTwoDiv {
+    padding-left: 50px;
+    padding-top: 15px;
+}
