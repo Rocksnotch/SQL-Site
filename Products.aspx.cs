@@ -11,6 +11,8 @@ namespace siteSQL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            productTable1.SelectedIndex = -1;
             var siteMaster = (SiteMaster)this.Master;
             if (siteMaster != null)
             {
