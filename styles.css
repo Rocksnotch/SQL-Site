@@ -109,3 +109,8 @@ footer {
     padding-left: 50px;
     padding-top: 15px;
 }
+
+#contextTextDiv {
+    padding-left: 15px;
+    padding-top: 10px;
+}

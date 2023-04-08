@@ -3,7 +3,7 @@
 
     <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-        <asp:SqlDataSource ID="productTab1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Product], [Refurbished], [Year], [Price] FROM [Table] WHERE ([Type] = @Type) ORDER BY [Year]">
+        <asp:SqlDataSource ID="productTab1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Product], [Price] FROM [Table] WHERE ([Type] = @Type)">
             <SelectParameters>
                 <asp:ControlParameter ControlID="dropdownlist" DefaultValue="NULL" Name="Type" PropertyName="SelectedValue" Type="String" />
             </SelectParameters>
@@ -11,11 +11,15 @@
 
         <asp:SqlDataSource ID="productTab2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Product], [Refurbished], [Year], [Price], [Image] FROM [Table] WHERE ([Product] = @Product)">
             <SelectParameters>
-                <asp:ControlParameter ControlID="productTable1" DefaultValue="NULL" Name="Product" PropertyName="SelectedValue" Type="String" />
+                <asp:ControlParameter ControlID="productTable1" DefaultValue="NULL" Name="Product" PropertyName="SelectedValue" Type="String"/>
             </SelectParameters>
         </asp:SqlDataSource>
 
         <asp:SqlDataSource ID="productList" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT DISTINCT [Type] FROM [Table]"></asp:SqlDataSource>
+
+        <div id="contextTextDiv">
+            Please select an inventory category in the dropdown below:
+        </div>
 
     <form id="listForm" runat="server">
 
@@ -28,8 +32,6 @@
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
                 <asp:BoundField DataField="Product" HeaderText="Product" SortExpression="Product" />
-                <asp:BoundField DataField="Refurbished" HeaderText="Refurbished" SortExpression="Refurbished" />
-                <asp:BoundField DataField="Year" HeaderText="Year" SortExpression="Year" />
                 <asp:BoundField DataField="Price" HeaderText="Price" SortExpression="Price" />
             </Columns>
             <EditRowStyle BackColor="#2461BF" />
