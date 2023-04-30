@@ -152,7 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="AccountPage.aspx" />
+    <Content Include="Account\AccountPage.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -231,11 +231,11 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountPage.aspx.cs">
+    <Compile Include="Account\AccountPage.aspx.cs">
       <DependentUpon>AccountPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AccountPage.aspx.designer.cs">
+    <Compile Include="Account\AccountPage.aspx.designer.cs">
       <DependentUpon>AccountPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">

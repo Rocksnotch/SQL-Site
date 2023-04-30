@@ -23,8 +23,6 @@ namespace siteSQL
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlAnchor homeNav;
 
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor accountNav;
-
         /// <summary>
         /// productsNav control.
         /// </summary>

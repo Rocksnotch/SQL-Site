@@ -62,7 +62,7 @@
                             </AnonymousTemplate>
                             <LoggedInTemplate>
                                 <li class="nav-item">
-                                    <a id="accountNav" runat="server" class="nav-link" style="color:white" aria-current="" href="~/AccountPage.aspx">My Account</a>
+                                    <a id="accountNav" runat="server" class="nav-link" style="color:white" aria-current="" href="~/Account/AccountPage.aspx">My Account</a>
                                 </li>
                             </LoggedInTemplate>
 
