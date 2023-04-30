@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Aperture Solar</title>
 
-    <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <link rel="shortcut icon" href="images/logo-single.webp" />
+    <link href="/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="~/images/logo-single.webp" />
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -20,18 +20,18 @@
 </head>
 <body>
     <main>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="/js/bootstrap.bundle.min.js"></script>
         <div class="container-fluid headerTop">
             <div class="row">
                 <div class="col">
-                    <img src="images/logo-full.webp" class="img-fluid headImg" alt="..." width="300" height="150">
+                    <img src="/images/logo-full.webp" class="img-fluid headImg" alt="..." width="300" height="150">
                 </div>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html">
-                    <img src="images/logo-single.webp" alt="" width="30" height="30">
+                <a class="navbar-brand" href="../Home.aspx">
+                    <img src="/images/logo-single.webp" alt="" width="30" height="30">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,19 +39,35 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a id="homeNav" runat="server" class="nav-link" style="color:white" aria-current="" href="Home.aspx">Home</a>
+                            <a id="homeNav" runat="server" class="nav-link" style="color:white" aria-current="" href="~/Home.aspx">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a id="productsNav" runat="server" class="nav-link" style="color:white" aria-current="" href="Products.aspx">Products</a>
+                            <a id="productsNav" runat="server" class="nav-link" style="color:white" aria-current="" href="~/Products.aspx">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a id="departmentsNav" runat="server" class="nav-link" style="color:white" aria-current="" href="Employees.aspx">Departments</a>
+                            <a id="departmentsNav" runat="server" class="nav-link" style="color:white" aria-current="" href="~/Employees.aspx">Departments</a>
                         </li>
                         <li class="nav-item">
-                            <a id="quoteNav" runat="server" class="nav-link" style="color:white" aria-current="" href="Quote.aspx">Quote</a>
+                            <a id="quoteNav" runat="server" class="nav-link" style="color:white" aria-current="" href="~/Quote.aspx">Quote</a>
                         </li>
                     </ul>
                 </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <asp:LoginView ID="LoginView1" runat="server">
+                    
+                            <AnonymousTemplate>
+                                <li class="nav-item">
+                                    <a id="loginNav" runat="server" class="nav-link" style="color:white" aria-current="" href="~/Account/Login.aspx">Login</a>
+                                </li>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <li class="nav-item">
+                                    <a id="accountNav" runat="server" class="nav-link" style="color:white" aria-current="" href="~/AccountPage.aspx">My Account</a>
+                                </li>
+                            </LoggedInTemplate>
+
+                        </asp:LoginView>
+                    </ul>
             </div>
         </nav>
 

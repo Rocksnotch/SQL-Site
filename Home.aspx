@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="siteSQL.Home" %>
 
 <asp:Content ID="homeContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    
     <div class="container-fluid mainContent">
             <div class="row">
               <div class="col">

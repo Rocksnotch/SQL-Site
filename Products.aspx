@@ -18,14 +18,24 @@
         <asp:SqlDataSource ID="productList" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT DISTINCT [Type] FROM [Table]"></asp:SqlDataSource>
 
         <div id="contextTextDiv">
-            Please select an inventory category in the dropdown below:
+            <h1>
+                Aperture Science Product Browser
+            </h1>
+            <h5>
+                (Please use the dropdown below to select a product category)
+            </h5>
         </div>
 
     <form id="listForm" runat="server">
 
+        <asp:ScriptManager ID="scriptOne" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel ID="updatePanel1" runat="server">
+            <ContentTemplate>
+
         <div class="dropdownDiv">
             <asp:DropDownList ID="dropdownlist" runat="server" Width="100px" DataSourceID="productList" DataTextField="Type" DataValueField="Type" AutoPostBack="True" OnSelectedIndexChanged="dropdownlist_SelectedIndexChanged"></asp:DropDownList>
         </div>
+
         <div class="tableOneDiv">
         <asp:GridView ID="productTable1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="productTab1" ForeColor="#333333" GridLines="None" DataKeyNames="Product">
             <AlternatingRowStyle BackColor="White" />
@@ -45,7 +55,6 @@
             <SortedDescendingCellStyle BackColor="#E9EBEF" />
             <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
-
         </div>
 
         <div class="tableTwoDiv">
@@ -64,6 +73,8 @@
             <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
         </asp:DetailsView>
         </div>
+        </ContentTemplate>
+        </asp:UpdatePanel>
     </form>
 
 </asp:Content>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Web;
@@ -7,6 +8,7 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using WebGrease.Css.Ast.Selectors;
 
 namespace siteSQL
 {
@@ -137,7 +139,6 @@ namespace siteSQL
             get { return productsNav.Attributes["style"]; }
             set { productsNav.Attributes["style"] = value; }
         }
-        
     }
 
 }

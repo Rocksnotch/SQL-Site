@@ -96,7 +96,7 @@ footer {
 
 .dropdownDiv {
     padding-top: 15px;
-    padding-left: 15px;
+    text-align: center;
 }
 
 .tableOneDiv {
@@ -111,6 +111,6 @@ footer {
 }
 
 #contextTextDiv {
-    padding-left: 15px;
     padding-top: 10px;
+    text-align: center;
 }
